@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamento</title>
+    <style>
+        .tela{
+            width: 600px;
+            background-color: #e3e3e3;
+            margin: 0 auto;
+            padding: 40px;
+            height: auto;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        h1{
+            font-size: 40px;
+            margin: 0;
+            padding-bottom: 10px;
+            font-weight: 100;
+        }
+        #marca, #placa{
+            padding: 5px;
+            width: 180px;
+            margin: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tela">
+        <h1>Estacionamento</h1>
+        <input type="text" name="marca" id="marca" placeholder="Digite a marca do seu veículo: " autocomplete="on">
+        <input type="text" name="placa" id="placa" placeholder="Digite a placa do seu veículo: " autocomplete="on">
+        <button id="cadastrar">Cadastrar Veículo</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Placa</th>
+                    <th>Entrada</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="patio"></tbody>
+        </table>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
